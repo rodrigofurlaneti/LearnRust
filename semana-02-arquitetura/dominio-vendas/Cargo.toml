@@ -1,0 +1,8 @@
+[package]
+name = "dominio-vendas"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dominio-clientes = { path = "../dominio-clientes" }
+dominio-pedidos = { path = "../dominio-pedidos" }

@@ -11,6 +11,14 @@ name = "dominio-pedidos"
 version = "0.1.0"
 
 [[package]]
+name = "dominio-vendas"
+version = "0.1.0"
+dependencies = [
+ "dominio-clientes",
+ "dominio-pedidos",
+]
+
+[[package]]
 name = "infraestrutura"
 version = "0.1.0"
 dependencies = [
