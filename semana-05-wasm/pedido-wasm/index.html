@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Pedido WASM</title>
+</head>
+<body>
+    <h1 id="resultado">Calculando...</h1>
+
+    <script type="module">
+        import init, { calcular_total_pedido } from "./pkg/pedido_wasm.js";
+
+        async function main() {
+            await init();
+
+            try {
+                const total = calcular_total_pedido(3, 50.0);
+                document.getElementById("resultado").textContent = `Total: ${total}`;
+            } catch (erro) {
+                document.getElementById("resultado").textContent = `Erro: ${erro}`;
+            }
+        }
+
+        main();
+    </script>
+</body>
+</html>
