@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "dominio-clientes"
+version = "0.1.0"
+
+[[package]]
 name = "dominio-pedidos"
 version = "0.1.0"
 
