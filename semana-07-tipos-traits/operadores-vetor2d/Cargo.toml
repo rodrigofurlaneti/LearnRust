@@ -1,0 +1,6 @@
+[package]
+name = "operadores-vetor2d"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
