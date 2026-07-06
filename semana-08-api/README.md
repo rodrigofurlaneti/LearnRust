@@ -232,7 +232,8 @@ a exigir axum 0.8.
 ## 8. Próximos passos sugeridos (semanas seguintes)
 
 - Middleware de autorização (extrator Axum que valida o JWT e injeta o
-  `UserId` autenticado nas rotas protegidas).
+  `UserId` autenticado nas rotas protegidas) — feito na Semana 9, ver
+  `../semana-09-autorizacao`.
 - Refresh token e revogação (blacklist em Redis).
 - Migrar `sqlx::query` para `sqlx::query!` com verificação em tempo de
   compilação, usando `cargo sqlx prepare` para modo offline em CI.
