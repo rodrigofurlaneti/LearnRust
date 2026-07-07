@@ -1,0 +1,27 @@
+pub mod cliente;
+pub mod cliente_id;
+pub mod cliente_repository;
+pub mod cpf;
+pub mod email;
+pub mod errors;
+pub mod nome_cliente;
+pub mod password;
+pub mod password_hasher;
+pub mod repository;
+pub mod role;
+pub mod user;
+pub mod user_id;
+
+pub use cliente::Cliente;
+pub use cliente_id::ClienteId;
+pub use cliente_repository::ClienteRepository;
+pub use cpf::Cpf;
+pub use email::Email;
+pub use errors::DomainError;
+pub use nome_cliente::NomeCliente;
+pub use password::{HashedPassword, PlainPassword};
+pub use password_hasher::PasswordHasher;
+pub use repository::UserRepository;
+pub use role::Role;
+pub use user::User;
+pub use user_id::UserId;
